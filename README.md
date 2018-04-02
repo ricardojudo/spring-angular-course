@@ -54,11 +54,7 @@ En los equipos de los participantes se requiere tener instalado el siguiente sof
 11. Despliegue
    - Formas de despliegue y ejecución del proyecto
    - Spring Boot Actuator
-12. Spring Batch
-   - Anatomía de Spring Batch
-   - Configuración
-   - Definición y ejecución de trabajos
-13. Fundamentos de Angular
+12. Fundamentos de Angular
    - Instalación de angular-cli
    - Creando la aplicación
    - Componentes
@@ -67,7 +63,7 @@ En los equipos de los participantes se requiere tener instalado el siguiente sof
    - Servicios
    - Enrutamiento
    - HTTP
-14. Angular dentro de aplicacion Spring Boot
+13. Angular dentro de aplicacion Spring Boot
    - Generando proyecto Angular en Spring Boot
    - Entregando aplicación Angular al navegador
    - Consumiendo API REST dentro de la aplicación
