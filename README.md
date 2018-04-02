@@ -73,4 +73,6 @@ En los equipos de los participantes se requiere tener instalado el siguiente sof
    - Consumiendo API REST dentro de la aplicación
 
 ## Ejemplos
-En la rama `master` del repositorio se encuentra el código base para realizar los ejercicios de cada tema. Siempre que se requiera se puede consultar las respuestas en la rama `answers` utilizando el comando.
+En la rama `master` del repositorio se encuentra el código base para realizar los ejercicios de cada tema. Siempre que se requiera se puede consultar las respuestas en la rama `answers` utilizando el comando `git checkout`.
+
+Se recomienda hacer un "fork" del repositorio para tener la libertad de modificar el código a conveniencia.
