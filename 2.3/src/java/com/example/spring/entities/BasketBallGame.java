@@ -1,11 +1,17 @@
 package com.example.spring.entities;
 
+import javax.sql.DataSource;
+
 public class BasketBallGame implements Game {
 
 	private Team homeTeam;
 	private Team awayTeam;
 	
-	
+	/*
+	 * Crear referencia a objeto DataSource
+	 */
+	private DataSource dataSource;
+		
 	
 	public BasketBallGame(Team homeTeam, Team awayTeam) {
 		super();
@@ -13,6 +19,18 @@ public class BasketBallGame implements Game {
 		this.awayTeam = awayTeam;
 	}
 
+	
+	/*
+	 * Metodo para establecer dataSource
+	 */
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+	
+	public DataSource getDataSource() {
+		return dataSource;
+	}
+	
 	@Override
 	public String playGame() {		
 		return Math.random() < 0.5 ? getHomeTeam().getName() : getAwayTeam().getName();

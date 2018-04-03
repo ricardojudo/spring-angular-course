@@ -12,13 +12,11 @@ import com.example.spring.entities.Lakers;
 public class AppConfig {
 	
 	@Bean
-	public Game buildGame() {
+	public Game game() {
 		/*
 		 * Configurar creacion de objeto Game
 		 */
-		Game game = new BasketBallGame();
-		game.setAwayTeam(new Heat());
-		game.setHomeTeam(new Lakers());
+		BasketBallGame game = new BasketBallGame(new Heat(), new Lakers());
 		return game;	
 	}
 	
