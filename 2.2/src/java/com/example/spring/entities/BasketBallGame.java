@@ -5,7 +5,7 @@ public class BasketBallGame implements Game {
 	private Team homeTeam;
 	private Team awayTeam;
 	
-	
+	public BasketBallGame() {}
 	
 	public BasketBallGame(Team homeTeam, Team awayTeam) {
 		super();

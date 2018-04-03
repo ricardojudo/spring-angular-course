@@ -12,6 +12,7 @@ public class BasketBallGame implements Game {
 	 */
 	private DataSource dataSource;
 		
+	public BasketBallGame() {}
 	
 	public BasketBallGame(Team homeTeam, Team awayTeam) {
 		super();
