@@ -54,11 +54,7 @@ En los equipos de los participantes se requiere tener instalado el siguiente sof
 11. Despliegue
    - Formas de despliegue y ejecución del proyecto
    - Spring Boot Actuator
-12. Spring Batch
-   - Anatomía de Spring Batch
-   - Configuración
-   - Definición y ejecución de trabajos
-13. Fundamentos de Angular
+12. Fundamentos de Angular
    - Instalación de angular-cli
    - Creando la aplicación
    - Componentes
@@ -67,10 +63,12 @@ En los equipos de los participantes se requiere tener instalado el siguiente sof
    - Servicios
    - Enrutamiento
    - HTTP
-14. Angular dentro de aplicacion Spring Boot
+13. Angular dentro de aplicacion Spring Boot
    - Generando proyecto Angular en Spring Boot
    - Entregando aplicación Angular al navegador
    - Consumiendo API REST dentro de la aplicación
 
 ## Ejemplos
-En la rama `master` del repositorio se encuentra el código base para realizar los ejercicios de cada tema. Siempre que se requiera se puede consultar las respuestas en la rama `answers` utilizando el comando.
+En la rama `master` del repositorio se encuentra el código base para realizar los ejercicios de cada tema. Siempre que se requiera se puede consultar las respuestas en la rama `answers` utilizando el comando `git checkout`.
+
+Se recomienda hacer un "fork" del repositorio para tener la libertad de modificar el código a conveniencia.
