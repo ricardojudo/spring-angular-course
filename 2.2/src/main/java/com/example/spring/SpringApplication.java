@@ -12,19 +12,17 @@ public class SpringApplication {
 		/*
 		 * Obtener objeto Game del contexto de Spring
 		 */
-		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+		//>>
 		
 		//Utilizando solamente la clase
-		//Game game = applicationContext.getBean(Game.class);
 		
 		//Utilizando el nombre y clase
-		Game game = applicationContext.getBean("game", Game.class);
 		
 		/*
 		 * Imprimir resultado del juego en pantalla
 		 */
-		System.out.println(game.toString());
-		System.out.println("Winner: " + game.playGame());
+		//>>
+		
 		
 	}
 

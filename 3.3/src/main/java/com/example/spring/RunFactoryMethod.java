@@ -10,16 +10,13 @@ public class RunFactoryMethod {
 		/*
 		 * Demostrar uso de NumberFormat
 		 */
-		NumberFormat nf = NumberFormat.getCurrencyInstance();
-		System.out.println(nf.format(9878979823.51230));
+		
 		
 		
 		/*
 		 * Obtener timezone local mediante clase Calendar
 		 */		
-		Calendar calendar = Calendar.getInstance();
-		TimeZone timeZone = calendar.getTimeZone();
-		System.out.println(timeZone);
+		
 
 	}
 

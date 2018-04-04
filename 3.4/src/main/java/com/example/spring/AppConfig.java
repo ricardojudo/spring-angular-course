@@ -12,7 +12,7 @@ public class AppConfig {
 	/*
 	 * Utilizar atributos initMethod y destroyMethod
 	 */
-	//@Bean(initMethod="init", destroyMethod="end")
+	//>>
 	@Bean
 	public New fakeNew() {
 		return new FakeNew();

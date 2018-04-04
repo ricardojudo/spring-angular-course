@@ -42,6 +42,10 @@ public class AppConfig {
 	
 	
 	@Bean
+	/*
+	 * Establecer alcance del bean en prototype
+	 */
+	//>>
 	@Scope("prototype")
 	public Game game() {
 		BasketBallGame game = new BasketBallGame(home, away);

@@ -16,14 +16,13 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Establecer configuracion del contexto con anotacion @ContextConfiguration
  * 
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = AppConfig.class)
+
 public class CalculatorSpringTest {
 
 	/*
 	 * Inyectando dependencia mediante @Autowired
 	 */
-	@Autowired
+	
 	private Calculator calculator;
 
 	@Before

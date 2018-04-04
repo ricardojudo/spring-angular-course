@@ -10,7 +10,10 @@ import com.example.spring.entities.New;
 
 @Configuration
 @ComponentScan("com.example.spring")
-@EnableAspectJAutoProxy
+/*
+ * Habilitar aspectos @EnableAspectJAutoProxy
+ */
+//>>
 public class AppConfig {
 	
 	

@@ -15,14 +15,12 @@ public class SpringApplicationXML {
 		/*
 		 * Obtener NumberFormat del contexto de Spring
 		 */
-		NumberFormat nf = applicationContext.getBean(NumberFormat.class);
-		System.out.println(nf.format(7897968754.94873487438));
+		
 		
 		/*
 		 * Obtener ZonaHoraria local del contexto de Spring
 		 */
-		TimeZone timeZone = applicationContext.getBean(TimeZone.class);
-		System.out.println(timeZone);
+		
 		
 	}
 

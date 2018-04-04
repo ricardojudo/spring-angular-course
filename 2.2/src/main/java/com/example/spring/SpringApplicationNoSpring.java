@@ -11,15 +11,14 @@ public class SpringApplicationNoSpring {
 		/*
 		 * Creacion y configuracion de objeto game
 		 */
-		Game game = new BasketBallGame(new Heat(), new Lakers());
-		game.setAwayTeam(new Heat());
-		game.setHomeTeam(new Lakers());
+		//>>
+		
 
 		/*
 		 * Imprimir resultado del juego en pantalla
 		 */
-		System.out.println(game.toString());
-		System.out.println("Winner: " + game.playGame());
+		//>>
+		
 		
 	}
 

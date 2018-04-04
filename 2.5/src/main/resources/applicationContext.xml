@@ -10,19 +10,13 @@
 
 
 	<!-- Declarando objetos con etiqueta Bean e inyectando dependencias -->
-	<bean name="game" class="com.example.spring.entities.BasketBallGame">
-		<property name="awayTeam" ref="heat" />
-		<property name="homeTeam" ref="lakers" />
-		<property name="dataSource" ref="dataSource" />
-	</bean>
+	
 
 	<!-- <bean name="heat" class="com.example.spring.entities.Heat"/> -->
 	<!-- <bean name="lakers" class="com.example.spring.entities.Lakers"/> -->
-	<bean name="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource" />
-
+	
 
 	<!-- Habilitar espacio de nombres de contexto -->
-	<context:component-scan base-package="com.example" />
+	
 
 </beans>

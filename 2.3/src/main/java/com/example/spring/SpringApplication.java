@@ -23,11 +23,7 @@ public class SpringApplication {
 		/*
 		 * Inspeccionar contexto de Spring
 		 */
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-		for (String name : applicationContext.getBeanDefinitionNames()) {
-			System.out.println(name);
-		}
-		System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+		//>>
 
 		/*
 		 * Imprimir resultado del juego en pantalla

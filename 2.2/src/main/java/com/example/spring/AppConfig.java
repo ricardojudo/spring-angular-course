@@ -8,16 +8,18 @@ import com.example.spring.entities.Game;
 import com.example.spring.entities.Heat;
 import com.example.spring.entities.Lakers;
 
-@Configuration
+/*
+ * Definir clase de configuracion mediante anotacion
+ * @Configuration
+ */
+//>>
+
 public class AppConfig {
+
+	/*
+	 * Definir metodo para crear objeto Game
+	 */
+	//>>
 	
-	@Bean
-	public Game game() {
-		/*
-		 * Configurar creacion de objeto Game
-		 */
-		BasketBallGame game = new BasketBallGame(new Heat(), new Lakers());
-		return game;	
-	}
 	
 }

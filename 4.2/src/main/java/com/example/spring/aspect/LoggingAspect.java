@@ -19,7 +19,7 @@ public class LoggingAspect {
 	/*
 	 * Before advice
 	 */
-	@Before("execution(* com.example.spring..*.*(..))")
+	//@Before("execution(* com.example.spring..*.*(..))")
 	public void callSetters(JoinPoint joinPoint) {
 		log("Before call setter",joinPoint);
 	}
@@ -27,7 +27,7 @@ public class LoggingAspect {
 	/*
 	 * After advice
 	 */
-	@After("execution(* com.example.spring..*.*(..))")
+	//@After("execution(* com.example.spring..*.*(..))")
 	public void afterCallSetters(JoinPoint joinPoint) {
 		log("After call setter",joinPoint);
 	}
@@ -36,7 +36,7 @@ public class LoggingAspect {
 	/*
 	 * Filtrando fake news
 	 */
-	@Around("execution(void com.example.spring..*.publish(*,*,*))")
+	//@Around("execution(void com.example.spring..*.publish(*,*,*))")
 	public void detectingFake(ProceedingJoinPoint joinPoint) throws Throwable{
 		
 		boolean fakeDetected=Math.random() > 0.5;

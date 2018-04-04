@@ -20,8 +20,7 @@ public class CalculatorManualSpringTest {
 		/*
 		 * Obtener calculadora de contexto de Spring
 		 */
-		context = new AnnotationConfigApplicationContext(AppConfig.class);
-		calculator = context.getBean(Calculator.class);
+
 
 	}
 
@@ -30,7 +29,7 @@ public class CalculatorManualSpringTest {
 		/*
 		 * Cerrar contexto de spring
 		 */
-		((AnnotationConfigApplicationContext) context).close();
+		
 	}
 
 	@Test

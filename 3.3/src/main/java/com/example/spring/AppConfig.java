@@ -10,8 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.example")
 public class AppConfig {
 
-	@Bean
-	public NumberFormat numberFormat() {
-		return NumberFormat.getCurrencyInstance();
-	}
+	/*
+	 * Obtener instancia de NumberFormat
+	 */
 }

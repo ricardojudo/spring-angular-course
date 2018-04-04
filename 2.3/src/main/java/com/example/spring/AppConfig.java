@@ -14,21 +14,28 @@ import com.example.spring.entities.Team;
 
 @Configuration
 
-//Incluir configuracion en clase Infrastructure
-@Import(Infrastructure.class)
+/*
+ * Incluir configuracion en clase Infrastructure
+ */
+//>>
+
 public class AppConfig {
 
 	@Bean
-	public Game game(DataSource dataSource) {
+	/*
+	 * Inyectar Datasource
+	 */
+	//>>
+	public Game game() {
 		/*
 		 * Configurar creacion de objeto Game
 		 */
-		BasketBallGame game = new BasketBallGame(heat(), lakers());
+		BasketBallGame game = null;
 		
 		/*
 		 * Establecer DataSource
 		 */
-		game.setDataSource(dataSource);
+		//>>
 		
 		return game;
 	}
@@ -37,14 +44,7 @@ public class AppConfig {
 	 * Configurar creacion de objetos Team para recuperarlos desde el contexto de
 	 * Spring
 	 */
-	@Bean
-	public Team heat() {
-		return new Heat();
-	}
-
-	@Bean
-	public Team lakers() {
-		return new Lakers();
-	}
+	//>>
+	
 
 }

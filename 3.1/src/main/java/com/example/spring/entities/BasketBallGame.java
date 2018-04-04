@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+//>>
 //@Component("game")
 public class BasketBallGame implements Game {
 
@@ -16,9 +17,12 @@ public class BasketBallGame implements Game {
 		
 	public BasketBallGame() {}
 	
-	
-	@Autowired
-	public BasketBallGame(@Qualifier("lakers") Team homeTeam, @Qualifier("heat") Team awayTeam) {
+	/*
+	 * Inyectar dependencias mediante constructor utilizando
+	 * @Autowired y @Qualifier
+	 */
+	//>>
+	public BasketBallGame(Team homeTeam, Team awayTeam) {
 		super();
 		this.homeTeam = homeTeam;
 		this.awayTeam = awayTeam;
@@ -28,7 +32,7 @@ public class BasketBallGame implements Game {
 	/*
 	 * Inyeccion de dependencia por metodo set
 	 */
-	@Autowired
+	//>>
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
