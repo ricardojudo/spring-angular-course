@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd
+		">
+
+	<!-- Declarar objeto New y utilizar atributos init-method y destroy-method -->
+	<bean id="fakeNew" class="com.example.spring.entities.FakeNew" />
+
+	<aop:aspectj-autoproxy />
+	<bean id="logging" class="com.example.spring.aspect.LoggingAspectXML" />
+
+	<aop:config>
+		<aop:aspect id="loggingAspect" ref="logging">
+			<aop:pointcut expression="execution(void com.example.spring..*.publish(*,*,*))"
+				id="pcDetectingFake" />
+			<aop:around method="detectingFake" arg-names="joinPoint"
+				pointcut-ref="pcDetectingFake" />
+
+			<aop:pointcut expression="execution(* com.example.spring..*.*(..))"
+				id="pcBeforeCall" />
+			<aop:before method="beforeCall" arg-names="joinPoint"
+				pointcut-ref="pcBeforeCall" />
+
+			<aop:pointcut expression="execution(* com.example.spring..*.*(..))"
+				id="pcAfterCall" />
+			<aop:after method="afterCall" arg-names="joinPoint"
+				pointcut-ref="pcAfterCall" />
+
+		</aop:aspect>
+	</aop:config>
+
+</beans>
