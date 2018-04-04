@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<!-- Declarando objetos con etiqueta Bean e inyectando dependencias -->
+	<bean name="game" class="com.example.spring.entities.BasketBallGame">
+		<property name="awayTeam" ref="heat" />
+		<property name="homeTeam" ref="lakers" />
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- <bean name="heat" class="com.example.spring.entities.Heat"/> -->
+	<!-- <bean name="lakers" class="com.example.spring.entities.Lakers"/> -->
+	<bean name="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource" />
+
+
+	<!-- Habilitar espacio de nombres de contexto -->
+	<context:component-scan base-package="com.example" />
+
+</beans>
