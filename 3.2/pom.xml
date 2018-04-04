@@ -6,12 +6,12 @@
     <artifactId>spring-parent</artifactId>    
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <artifactId>spring-application-32</artifactId>
+  <artifactId>spring-application-3.2</artifactId>
   <packaging>jar</packaging>
   <name>Spring Application</name>
   <url>http://maven.apache.org</url>
   <build>
-    <finalName>spring-application-32</finalName>
+    <finalName>spring-application-3.2</finalName>
   </build>
   <dependencies>
     <dependency>

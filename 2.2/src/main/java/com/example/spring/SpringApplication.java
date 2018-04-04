@@ -3,7 +3,6 @@ package com.example.spring;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.example.spring.entities.BasketBallGame;
 import com.example.spring.entities.Game;
 
 public class SpringApplication {
