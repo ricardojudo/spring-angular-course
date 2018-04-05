@@ -49,24 +49,24 @@ En los equipos de los participantes se requiere tener instalado el siguiente sof
    - Creando una aplicación con Spring Boot
    - Configurando la aplicación
 10. Spring Data JPA
-   - Inducción a JPA
-   - Generar un repositorio JPA
+    - Inducción a JPA
+    - Generar un repositorio JPA
 11. Despliegue
-   - Formas de despliegue y ejecución del proyecto
-   - Spring Boot Actuator
+    - Formas de despliegue y ejecución del proyecto
+    - Spring Boot Actuator
 12. Fundamentos de Angular
-   - Instalación de angular-cli
-   - Creando la aplicación
-   - Componentes
-   - Desplegando una lista
-   - Componentes maestro-detalle
-   - Servicios
-   - Enrutamiento
-   - HTTP
+    - Instalación de angular-cli
+    - Creando la aplicación
+    - Componentes
+    - Desplegando una lista
+    - Componentes maestro-detalle
+    - Servicios
+    - Enrutamiento
+    - HTTP
 13. Angular dentro de aplicacion Spring Boot
-   - Generando proyecto Angular en Spring Boot
-   - Entregando aplicación Angular al navegador
-   - Consumiendo API REST dentro de la aplicación
+    - Generando proyecto Angular en Spring Boot
+    - Entregando aplicación Angular al navegador
+    - Consumiendo API REST dentro de la aplicación
 
 ## Ejemplos
 En la rama `master` del repositorio se encuentra el código base para realizar los ejercicios de cada tema. Siempre que se requiera se puede consultar las respuestas en la rama `answers` utilizando el comando `git checkout`.
