@@ -1,0 +1,16 @@
+<app-post-details [post]="post"  ></app-post-details>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <th>ID</th>
+    <th>title</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let _post of posts" (click)="show(_post)" [class.table-active] = "post && post.id == _post.id">
+      <td>{{_post.id}}</td>
+      <td>{{_post.title}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
