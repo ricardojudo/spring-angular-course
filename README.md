@@ -62,11 +62,10 @@ En los equipos de los participantes se requiere tener instalado el siguiente sof
     - Componentes maestro-detalle
     - Servicios
     - Enrutamiento
-    - HTTP
 13. Angular dentro de aplicacion Spring Boot
-    - Generando proyecto Angular en Spring Boot
     - Entregando aplicación Angular al navegador
-    - Consumiendo API REST dentro de la aplicación
+    - Consumiendo API REST dentro de la aplicación. Angular HTTP
+    - Empaquetado y ejecución de aplicación
 
 ## Ejemplos
 En la rama `master` del repositorio se encuentra el código base para realizar los ejercicios de cada tema. Siempre que se requiera se puede consultar las respuestas en la rama `answers` utilizando el comando `git checkout`.
